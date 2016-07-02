@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/card_item_view"
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    android:layout_margin="8dp"
+    card_view:cardElevation="6dp"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardPreventCornerOverlap="false"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:textSize="32sp"
+            android:id="@+id/item_title_text"
+            android:textAlignment="center"
+            android:layout_marginTop="32dp"/>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/divider"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@android:color/darker_gray"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="19/02/2016"
+                android:id="@+id/date_text"
+                android:layout_marginTop="32dp"
+                android:textSize="12sp"
+                android:layout_marginLeft="8dp"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/tick_done_img"
+                android:src="@drawable/ic_done"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="8dp"
+                android:clickable="true"
+                android:layout_marginBottom="4dp" />
+
+        </RelativeLayout>
+
+
+</LinearLayout>
+
+
+</android.support.v7.widget.CardView>
